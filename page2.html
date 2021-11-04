@@ -8,20 +8,20 @@
 	<!-- javascript -->
 	<script type="text/javascript">
                  var age; //declare vars
-		 var speed;
+		 var age;
 		 
 		 //taking in and parsing numbers
 		 age = parseInt(prompt("Enter your age"));
-		 speed = parseInt(prompt("Enter speed"));
+		 age = parseInt(prompt("Enter your age"));
 		 
-		 if((age < 21) || (speed > 100)){
-		     //if either side evaluates to true, give 2 pts
-			 document.write("<br />you have 2 penalty points");
+		 if((age > 18) && (age < 21)){
+		     //if either side evaluates to true,
+			 document.write("<br />you can drink");
 		 }
 		 
-		 if((age < 21) && (speed > 100)){
-		     //both side need to evaluate to true, give 2 pts
-			 document.write("<br />you have 2 penalty points");
+		 else{
+		     //code to execute when the if statement evaluates to false,
+			 document.write("<br />you cannot drink");
 		 }
 		 
 		 document.write("<br />outside the IF statement");
