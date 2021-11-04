@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>JS demo</title>
+	<!-- my CSS  -->
+	<link href="stylesheet.css" rel="stylesheet" >
+	
+	<!-- javascript -->
+	<script type="text/javascript">
+         var age; //declare vars
+		 var speed;
+		 
+		 //taking in and parsing numbers
+		 age = parseInt(prompt("Enter your age"));
+		 speed = parseInt(prompt("Enter speed"));
+		 
+		 if((age < 21) || (speed > 100)){
+		     //if either side evaluates to true, give 2 pts
+			 document.write("<br />you have 2 penalty points");
+		 }
+		 
+		 if((age < 21) && (speed > 100)){
+		     //both side need to evaluate to true, give 2 pts
+			 document.write("<br />you have 2 penalty points");
+		 }
+		 
+		 document.write("<br />outside the IF statement");
+	</script>
+  </head>
+  <body>
+    <body id="page2">
+	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+	<a href="js-index.html">Back</a>
+	
+  </body>
+</html>
